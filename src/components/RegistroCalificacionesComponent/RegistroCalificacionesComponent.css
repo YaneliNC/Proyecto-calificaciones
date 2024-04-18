@@ -1,0 +1,120 @@
+.main-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Cambio a min-height */
+}
+
+.row-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los elementos horizontalmente */
+  justify-content: center; /* Alinea los elementos verticalmente */
+  border-radius: 10px;
+  background: #e8d9fb;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  padding: 20px; /* Añadido padding para separar del borde */
+  width: 50%; /* Cambiar el ancho del row */
+  max-width: 800px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centrar el formulario horizontalmente */
+}
+
+
+.col-md-6-c {
+  max-width: 900px; /* Ancho máximo del formulario */
+}
+
+.header-c {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
+  margin-bottom: 20px; /* Reducido el margen inferior */
+}
+
+.input-box-c {
+  width: 100%; /* Ancho al 100% */
+  max-width: 330px; /* Máximo ancho del contenedor de inputs */
+  box-sizing: border-box;
+  margin-top: 20px; /* Ajuste del margen superior */
+}
+
+.input-box-c header {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px; /* Reducción del margen inferior */
+  font-size: 20px;
+}
+
+.input-field-c {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%; /* Ancho al 100% */
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.input-c {
+  height: 45px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  margin-bottom: 20px;
+  color: #40414a;
+}
+
+.input-box-c .input-field-c label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-field-c .input-c:focus ~ label,
+.input-field-c .input-c:valid ~ label {
+  top: -10px;
+  font-size: 13px;
+  color: #5d5076;
+}
+
+.input-field-c .input-c:focus,
+.input-field-c .input-c:valid {
+  border-bottom: 1px solid #bd90f0;
+}
+
+.submit-ca {
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 100%; /* Ancho al 100% */
+  background: #bd90f0;
+  border-radius: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.submit-ca:hover {
+  background: #bd90f0;
+  color: black;
+}
+
+.signin-c {
+  text-align: center;
+  font-size: small;
+  margin-top: 25px;
+}
+
+.register-link {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: small;
+  margin-top: 25px;
+}
+.submit-ca a {
+  color: #000; /* Cambia el color del texto del enlace a blanco */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+.submit-ca a:hover {
+  background-color: #fff; /* Elimina el color de fondo al pasar el mouse */
+}

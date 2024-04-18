@@ -1,0 +1,84 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  color: black;
+  border: 2px solid purple;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission-map-section,
+.values-vision-section {
+  display: flex;
+  align-items: flex-start;
+}
+
+.mission-section,
+.values-section,
+.vision-section {
+  width: 40%; /* Reducir el ancho de los cards */
+  padding: 10px; /* Reducir el relleno de los cards */
+  margin-bottom: 20px; /* Añadir margen inferior a los cards */
+}
+
+.values-section {
+  margin-right: 20px;
+}
+
+.vision-section {
+  margin-left: 20px;
+}
+
+/* Estilos para ajustar el tamaño de las imágenes */
+.map-image img {
+  max-width: 40%; /* Ajustar el ancho máximo de las imágenes */
+  height: 50 px; /* Mantener la proporción de aspecto de las imágenes */
+  margin-left: 500px;
+  margin-top: -220px;
+}
+.schedule-image img {
+  max-width: 40%; /* Ajustar el ancho máximo de las imágenes */
+  height: 50 px; /* Mantener la proporción de aspecto de las imágenes */
+  margin-left: 500px;
+  margin-top: 200px;
+}
+
+.section-space {
+  margin-bottom: 40px;
+}
+
+.navbar-space {
+  height: 60px; /* Ajustar según la altura de tu navbar */
+}
+.up{
+  margin-top: -590px;
+}
+.values-content ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el relleno interno de la lista (opcional) */
+  margin: 0; /* Elimina el margen externo de la lista (opcional) */
+}
+
+.values-content li {
+  /* Opcional: Ajusta el margen o el relleno del texto dentro de cada elemento de la lista */
+  margin-bottom: 5px; /* Por ejemplo, añade un margen inferior entre los elementos */
+}
+.mov {
+  margin-left: 600px; 
+  margin-top: -250px;
+}
+.social-media-section {
+  margin-right: 500px; /* Esto empujará la card hacia la izquierda */
+  margin-left: 0; /* Asegura que no haya margen a la izquierda */
+  width: 30%; /* Ancho más pequeño */
+  padding: 70px; /* Reducir el relleno */
+  margin-top: 50px;
+}
+
+
+

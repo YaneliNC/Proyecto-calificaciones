@@ -1,0 +1,109 @@
+/* Navbar styles */
+/* Navbar styles */
+h2 {
+    color: white;
+    font-weight: 400;
+  }
+  
+  h2 span {
+    font-weight: bold;
+    font-size: 27px;
+  }
+  
+  nav {
+    padding: 0.4rem;
+    background-color: #bd90f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .links {
+    display: flex; /* Mostrar los enlaces horizontalmente */
+    justify-content: space-around; /* Distribuir los enlaces de manera uniforme */
+    align-items: center; /* Centrar verticalmente los enlaces */
+  }
+  
+  .links a {
+    color: white;
+    font-size: 120px; /* Ajusta el tamaño de la letra */
+    margin-right: 5rem; /* Agrega espacio entre los enlaces */
+    font-weight: bold;
+    
+  }
+  
+  
+  @media (min-width: 768px) {
+    .links {
+      display: block; /* Mostrar los enlaces en pantallas más grandes */
+      text-align: center;
+      margin: 0;
+      
+    }
+  
+    .links a {
+      font-size: 24px;
+      display: inline;
+      margin-top: 10px;
+    }
+    .links a:hover {
+      color: #38105b;
+      }
+      a {
+      font-weight: 500;
+      color: #d6bcf6;
+      text-decoration: inherit;
+  }
+  }
+  
+  .links.active {
+    display: block; /* Mostrar los enlaces cuando está activo */
+  }
+  
+  .burguer {
+    display: block; /* Mostrar el botón de hamburguesa en pantallas más pequeñas */
+  }
+  
+  .bgDiv {
+    background-color: #7934bc;
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  
+  .bgDiv.active {
+    border-radius: 0 0 80% 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  /* Navbar styles */
+nav {
+  position: fixed; /* Establece la posición fija */
+  top: 0; /* Coloca el Navbar en la parte superior */
+  left: 0; /* Alinea el Navbar a la izquierda */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  z-index: 999; /* Asegura que esté por encima de otros elementos */
+}
+.icon-wrapper {
+  display: inline-block; /* Asegura que el contenedor ocupe solo el espacio que necesita */
+  vertical-align: middle; /* Alinea verticalmente el contenedor */
+  line-height: 1; /* Establece la altura de línea para igualar la altura del texto */
+}
+
+.icon {
+  font-size: 24px; /* Ajusta el tamaño del icono */
+  margin-right: 8px; /* Agrega un margen a la derecha del icono */
+  margin-top: -5px;
+}

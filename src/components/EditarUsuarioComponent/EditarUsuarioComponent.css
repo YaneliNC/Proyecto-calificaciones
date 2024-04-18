@@ -1,0 +1,154 @@
+.wrapper {
+    background-image: url("ruta/a/tu/imagen/nubes.jpg");
+    padding: 0 20px; /* Ajuste de padding horizontal */
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .row {
+    width: 600px; /* Reduce el ancho del contenedor */
+    height: auto; /* Altura automática según el contenido */
+    border-radius: 10px;
+    background: #e8d9fb;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 50px; /* Ajusta el margen inferior */
+    margin-left: -30px;
+    font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
+  }
+  .col-md-6 {
+    width: 50%;
+    padding: 20px;
+  }
+  
+  .image-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 450px; /* Ancho deseado */
+    height: 400px; /* Altura deseada */
+    position: absolute;
+    top: 170px; /* Ajusta la posición vertical (subir o bajar) */
+    left: 37%; /* Mantén el mismo valor para centrar horizontalmente */
+    transform: translateX(-50%); /* Centra horizontalmente */
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Ajuste del alineado de texto */
+  }
+  
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%; /* Ajuste del ancho al 100% */
+  }
+  
+  .input-box {
+    width: 330px;
+    margin: 50px auto 0; /* Centro horizontalmente y aumenta el margen superior */
+    box-sizing: border-box;
+  }
+  
+  .input-box header {
+    font-weight: 700;
+    text-align: -30px;
+    margin-bottom: 20px; /* Reducción del margen inferior */
+    font-size: 20px;
+  }
+  
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    margin-left: -30px; /* Ajusta el margen izquierdo */
+  }
+  
+  .input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+  }
+  
+  .input-box .input-field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .input-field .input:focus ~ label,
+  .input-field .input:valid ~ label {
+    top: -10px;
+    font-size: 13px;
+    color: #000000;
+  }
+  
+  .input-field .input:focus,
+  .input-field .input:valid {
+    border-bottom: 1px solid #bd90f0;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #bd90f0;
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background: #a465e7;
+    color: black;
+  }
+  
+  .signin {
+    text-align: center;
+    font-size: small;
+    margin-top: 25px;
+  }
+  
+  span a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: 0.5s;
+  }
+  
+  span a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  
+  
+  
